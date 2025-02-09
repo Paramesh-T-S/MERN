@@ -6,7 +6,7 @@ function App() {
     </div>
   )
 }
-
+//child component
 function TextComponent(){
   return (
     <div>
@@ -14,7 +14,7 @@ function TextComponent(){
     </div>
   )
 }
-
+//parent component
 function CardWrapperComponent({innerComponent}){
   return(
     <div style={{border:"2px solid"}}>
