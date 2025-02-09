@@ -9,6 +9,7 @@ function App() {
   )
 }
 
+//Header component
 function HeaderComonent({headerTitle}){
   return(
     <div>{headerTitle}</div>
