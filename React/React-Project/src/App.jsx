@@ -40,7 +40,7 @@ function App() {
       <button onClick={updateTos}> Add ToDo button</button>
       {/* iterating over the todos list */}
       {todos.map((todo) => 
-        <ToDo title={todo.title} description={todo.description}></ToDo> 
+        <ToDo key={todo.id} title={todo.title} description={todo.description}></ToDo> 
       )}
     </div>
   )
