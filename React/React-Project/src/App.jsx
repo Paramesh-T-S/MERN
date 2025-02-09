@@ -2,7 +2,12 @@ function App() {
 
   return (
     <div> 
-      <CardWrapperComponent innerComponent={<TextComponent></TextComponent>} ></CardWrapperComponent>
+      <CardWrapperComponent>
+        <TextComponent></TextComponent>
+      </CardWrapperComponent>
+      <CardWrapperComponent>
+        Hi Paramesh
+      </CardWrapperComponent>
     </div>
   )
 }
@@ -14,11 +19,11 @@ function TextComponent(){
     </div>
   )
 }
-//parent component
-function CardWrapperComponent({innerComponent}){
+//parent component - inbuilt "children" key is use
+function CardWrapperComponent({children}){
   return(
     <div style={{border:"2px solid"}}>
-      {innerComponent}
+      {children}
     </div>
   )
 }
